@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1a025e, #6303a3); /* Azul escuro e roxo */
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    padding-left: 10px; /* Pequeno espaçamento à esquerda */
+    padding-right: 10px; /* Pequeno espaçamento à direita */
+}
+
+.content {
+    padding: 20px; /* Espaçamento interno */
+}
+
+nav {
+     background: linear-gradient(to right, #1a025e, #6303a3); /* Azul escuro e roxo */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do menu de navegação */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #55058f; /* Cor de fundo roxo claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.item h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+/* Ajusta o espaçamento da imagem */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
+}
+
+footer {
+    background: linear-gradient(to right, #1a025e, #6303a3); /* Azul escuro e roxo */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Centraliza o título principal */
+.centered-content {
+    text-align: center;
+    margin: 20px 0; /* Adiciona um espaçamento abaixo do título */
+}

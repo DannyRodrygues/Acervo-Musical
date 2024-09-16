@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo Musical</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="centered-content">
+        <h1>Acervo Musical</h1>
+    </div>
+
+    <nav>
+        <a href="#" onclick="mostrarSecao('intro')">Home</a>
+        <a href="#" onclick="mostrarSecao('cantores')">Cantores</a>
+        <a href="#" onclick="mostrarSecao('musicas')">Músicas</a>
+        <a href="#" onclick="mostrarSecao('categorias')">Categorias</a>
+        <a href="#" onclick="mostrarSecao('gravadoras')">Gravadoras</a>
+    </nav>
+
+    <div id="intro" class="secao">
+        <h2>Bem-vindo ao Acervo Musical</h2>
+        <p>
+            Olá! Meu nome é <strong>Daniella Oliveira Rodrigues</strong>, sou graduada em <strong>Análise e Desenvolvimento de Software</strong> e estou cursando <strong>Pós-Graduação em Especialização em Java</strong> pela UTFPR.
+            Este projeto foi criado como parte dos meus estudos na área de <strong>Banco de Dados</strong> e no desenvolvimento de <strong>APIs Restful</strong>.
+        </p>
+        <h2>Objetivo</h2>
+        <p>
+            A API de acervo musical foi desenvolvida para fins educacionais, utilizando a linguagem <strong>Java</strong> e o ambiente de desenvolvimento <strong>IntelliJ</strong>.
+        </p>
+        <h2>Estrutura do Projeto</h2>
+        <p>
+            O projeto segue uma arquitetura em camadas, com separação clara entre entidade, repositório, serviço e controlador. O projeto está dividido em camadas bem definidas, como mostrado abaixo:
+            <img src="/img/estrutura_camadas.jpeg" alt="Estrutura do Projeto">
+            <ul>
+                <li>
+                    Entity: Representa as entidades do sistema, como "Cantor". A classe Cantor, por exemplo, define os atributos de um cantor e usa anotações do Jakarta Persistence API (JPA) para mapeamento da tabela no banco de dados. Exemplo de classe:
+                </li>
+            </ul>
+            <img src="/img/ex_entity.jpeg" alt="Exemplo da classe Entity">
+            <ul>
+                <li>
+                    Repository: A camada de repositório se comunica diretamente com o banco de dados usando o Spring Data JPA. O CantorRepository facilita operações CRUD (Create, Read, Update, Delete) na entidade "Cantor". Exemplo de interface:
+                </li>
+            </ul>
+            <img src="/img/ex_repository.jpeg" alt="Exemplo da classe Repository">
+            <ul>
+                <li>
+                    Service: Nesta camada, a lógica de negócios é implementada. O CantorService possui métodos como listar, encontrar, salvar e deletar cantores. Ele também realiza as operações de CRUD utilizando o repositório. Exemplo de classe:
+                </li>
+            </ul>
+            <img src="/img/ex_Service.jpeg" alt="Exemplo da classe Service">
+            <ul>
+                <li>
+                    Controller: A camada de controle expõe os recursos da API através de endpoints HTTP. O CantorController gerencia requisições de GET, POST, PUT e DELETE para manipular cantores. Exemplo de classe:
+                </li>
+            </ul>
+            <img src="/img/ex_Controller.jpeg" alt="Exemplo da classe Controller">
+        </p>
+        <h2>Testes da API</h2>
+        <p>
+            Para testar os endpoints da API, foi utilizado o Postman, uma ferramenta que permite simular requisições HTTP, validar respostas e testar a API de maneira eficiente.
+            Este projeto foi fundamental para consolidar meu aprendizado em Java, Spring Boot, e bancos de dados relacionais com MariaDB.
+        </p>
+    </div>
+
+    <div id="cantores" class="secao" style="display:none;">
+        <h2>Cantores</h2>
+        <div id="cantores-list"></div>
+    </div>
+
+    <div id="musicas" class="secao" style="display:none;">
+        <h2>Músicas</h2>
+        <div id="musicas-list"></div>
+    </div>
+
+    <div id="categorias" class="secao" style="display:none;">
+        <h2>Categorias</h2>
+        <div id="categorias-list"></div>
+    </div>
+
+    <div id="gravadoras" class="secao" style="display:none;">
+        <h2>Gravadoras</h2>
+        <div id="gravadoras-list"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 Acervo Musical - Todos os direitos reservados à Daniella Rodrigues</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
