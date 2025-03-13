@@ -76,3 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializa mostrando a página de introdução
     mostrarSecao('intro');
 });
+// Alteração para disparar deploy
