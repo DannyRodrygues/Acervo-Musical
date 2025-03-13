@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Função para carregar dados da API
     function carregarDados(secaoId) {
         const urlMap = {
-            'cantores': 'http://localhost:8080/cantores',
-            'musicas': 'http://localhost:8080/musicas',
-            'categorias': 'http://localhost:8080/categorias',
-            'gravadoras': 'http://localhost:8080/gravadoras'
+            'cantores': 'https://acervo-musical-production.up.railway.app/cantores',
+    'musicas': 'https://acervo-musical-production.up.railway.app/musicas',
+    'categorias': 'https://acervo-musical-production.up.railway.app/categorias',
+    'gravadoras': 'https://acervo-musical-production.up.railway.app/gravadoras'
         };
 
         const url = urlMap[secaoId];
